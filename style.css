@@ -1,0 +1,62 @@
+.container{
+    background:url(img/traffic-light-.jpg) no-repeat;
+    /* background-color: blue; */
+    background-position: center center;
+    background-size: cover; 
+   
+    height: auto;
+    
+  
+}
+h1{
+    color: red;
+    text-align: center;
+    justify-content: end;
+    margin-left: 480px;
+}
+h3{
+    color: olive;
+}
+
+.main{
+   
+    text-align: center;
+    justify-content: center;
+   
+}
+.Time-columns{
+    color: black;
+    margin-left: 500px;
+    margin-top: 50px;
+
+}
+ .traffic-columns{
+    color: black;
+    margin-left: 500px;
+    margin-top: 50px;
+
+}
+textarea{
+    margin-left: 0px;
+}
+button{
+  background-color: blue;  
+}
+.stopLight{
+    background-color: red !important;
+}
+.waitLight{
+    background-color: orange !important;
+}
+.goLight{
+    background-color: green !important;
+}
+.redMessage, .orangeMessage, .greenMessage {
+	font-size: 110%;
+	margin: 1em auto;
+	width: 10em;
+	padding: 1em;
+	background-color:darkgrey;
+	border-radius: 100%;
+    border: 1px solid black;
+}
