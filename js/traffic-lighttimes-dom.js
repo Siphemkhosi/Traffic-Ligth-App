@@ -13,17 +13,21 @@ turnLightButElem.addEventListener("click", function () {
     //   redLightPertElem.classList.add(".stopLight")
     redLightPertElem.innerHTML = theDom.setRedLightMes();
     redLightPertElem.classList.add(theDom.setRedLightBack());
+    orangeLightPertElem.classList.remove(theDom.setOrangeLightBack());
+    greenLightPertElem.classList.remove(theDom.setGreenLightBack());
+
+
     orangeLightPertElem.innerHTML = "robot"
     greenLightPertElem.innerHTML = "robot"
   }
 
   if (lightCommandElem.value === "wait") {
     orangeLightPertElem.innerHTML = theDom.setOrangeLightMes();
-    orangeLightPertElem.classList.add("waitLight");
+    orangeLightPertElem.classList.add(theDom.setOrangeLightBack());
     redLightPertElem.classList.remove(theDom.setRedLightBack());
-    greenLightPertElem.classList.remove
+    greenLightPertElem.classList.remove(theDom.setGreenLightBack());
     
-    (theDom.setGreenLightBack());
+
     redLightPertElem.innerHTML = "robot"
     greenLightPertElem.innerHTML = "robot"
   }
@@ -31,8 +35,9 @@ turnLightButElem.addEventListener("click", function () {
   if (lightCommandElem.value === "go") {
     greenLightPertElem.innerHTML = theDom.setGreenLightMes();
     greenLightPertElem.classList.add(theDom.setGreenLightBack());
-    orangeLightPertElem.classList.remove("waitLight");
+    orangeLightPertElem.classList.remove(theDom.setOrangeLightBack());
     redLightPertElem.classList.remove(theDom.setRedLightBack());
+
     orangeLightPertElem.innerHTML = "robot"
     redLightPertElem.innerHTML = "robot"
   }
